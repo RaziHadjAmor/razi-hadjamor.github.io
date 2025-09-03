@@ -271,6 +271,11 @@
             font-size: 1.2rem;
         }
 
+        #nuitinfo {
+            background: url('https://www.nuitdelinfo.com/img/logo-n2i-2024.png') no-repeat center center;
+            background-size: contain;
+        }
+
         .project-content {
             padding: 1.5rem;
         }
@@ -468,9 +473,6 @@
     </style>
 </head>
 <body>
-    <!-- Curseur personnalisé -->
-    <div id="custom-cursor">>_</div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -480,7 +482,7 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
                 <li><a href="#projects">Projets</a></li>
-                <li><a href="#formation">Formation</a></li>
+                <li><a href="#formation">Formation/Expérience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -508,12 +510,18 @@
         <div>
             <div class="about-text">
                 <h3>Passionné par le potentiel de l'informatique</h3>
-                <p>Rigoureux et doté d'un excellent relationnel, j'ai toujours été curieux et fasciné par le potentiel de l'informatique. Actuellement en deuxième année de BUT Informatique parcours Technologies de l'Information à l'IUT de Villetaneuse (USPN).</p>
-                <p>Fort d'une solide base en mathématiques avec une Licence 2 Maths validée, je combine rigueur analytique et passion technologique pour créer des solutions innovantes. J'aime travailler en équipe et relever des défis techniques stimulants. Mon parcours en Passerelle me permet d'avoir une double compétence en informatique et sciences des données.</p>
+                <p>Rigoureux et doté d'un bon relationnel, j'ai toujours été curieux et fasciné par le potentiel de l'informatique. Actuellement en deuxième année de BUT Informatique, parcours Technologies de l'Information à l'IUT de Villetaneuse (USPN), j'ai choisi cette orientation afin de combiner ma passion pour la programmation et les sciences des données avec une solide base analytique acquise en mathématiques.</p>
+                <br>
+                <p>Avec une Licence 2 Maths validée, je bénéficie d’une double compétence en informatique et en mathématiques, ce qui me permet d’aborder les projets avec rigueur et créativité. Mon parcours en Passerelle m’a donné l’opportunité de développer des compétences variées, allant de la modélisation et l’analyse de données à la conception d'applications et au travail en équipe.</p>
+                <br>
+                <p>Au cours de mon parcours, j’ai identifié mes points forts : la capacité à analyser et structurer des informations complexes, la curiosité intellectuelle, et l’aptitude à collaborer efficacement sur des projets pluridisciplinaires. J’ai également pris conscience des points de vigilance, tels que la nécessité d’approfondir certaines technologies ou méthodes avancées, et l’importance de maintenir une veille constante sur les évolutions du domaine informatique.</p>
+                <br>
+                <p>Pour la suite, je souhaite continuer mon parcours en master ou intégrer une école d’ingénieurs afin de renforcer mes compétences techniques et scientifiques, approfondir mes connaissances en intelligence artificielle et data science, et contribuer à des projets innovants. Je suis convaincu que mes acquis, mon esprit d’initiative et ma motivation me permettront de réussir et de m’épanouir dans ces futures étapes de formation.</p>
+                <br>
                 <p><strong>Formation :</strong> BUT Informatique Passerelle (TI) + Licence Mathématiques</p>
                 <p><strong>Établissement :</strong> Université Sorbonne Paris Nord - IUT Villetaneuse</p>
-                <p><strong>Langues :</strong> Français (natif), Anglais B2 (TOEIC)</p>
-                <p><strong>Disponible pour :</strong> Stage, Alternance, intégrer une école d'ingénieurs</p>
+                <p><strong>Langues :</strong> Anglais B2 (TOEIC)</p>
+                <p><strong>Disponible pour :</strong> Stage, Alternance</p>
             </div>
         </div>
     </section>
@@ -550,7 +558,7 @@
             <div class="skill-card">
                 <div class="skill-icon">📈</div>
                 <h3>Mathématiques</h3>
-                <p>Probabilités, Statistiques, Analyse numérique, Algorithmique</p>
+                <p>Probabilités-Statistiques, Analyse numérique, Algorithmique, Algèbre, Topologie</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">🎯</div>
@@ -570,73 +578,25 @@
         </div>
     </section>
 
-    <!-- Stage Section -->
-    <section id="stage" class="section section-light">
-        <h2 class="section-title fade-in">Mon Stage</h2>
-        <div class="projects-grid fade-in">
-            <div class="project-card">
-                <div class="project-image">🐍 Développeur Python & Data</div>
-                <div class="project-content">
-                    <h3>SIAAP – Traitement & Structuration de Bases de Données</h3>
-                    <p><strong>Période :</strong> Juillet 2025 – Août 2025 (2 mois)</p>
-                    <p><strong>Lieu :</strong> Colombes, Île-de-France (sur site)</p>
-                    <p><strong>Contexte :</strong> Stage au sein du service Modélisation Opérationnelle (Direction Innovation). Objectif : transformer des fichiers Excel hétérogènes (mesures terrain, physico-chimie) en données normalisées et exploitables.</p>
-                    <p><strong>Missions principales :</strong></p>
-                    <ul>
-                        <li>Fusion et normalisation des données avec <strong>Python (pandas)</strong>.</li>
-                        <li>Automatisation de la conversion <strong>Excel → CSV</strong>.</li>
-                        <li>Mise en place d’une base <strong>SQLite</strong> (préparation migration PostgreSQL).</li>
-                        <li>Développement d’une <strong>API FastAPI</strong> pour interroger les données.</li>
-                        <li>Versionning et collaboration via <strong>Git/GitHub</strong>.</li>
-                    </ul>
-                    <p><strong>Impact :</strong> Amélioration de la qualité et de la réutilisabilité des données pour l’analyse et les modèles de simulation.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">SQLite</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Git/GitHub</span>
-                        <span class="tag">Excel</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Projects Section -->
     <section id="projects" class="section section-white">
         <h2 class="section-title fade-in">Mes Projets</h2>
         <div class="projects-grid fade-in">
             <div class="project-card">
-                <div class="project-image">📊 Enquête Diplômés</div>
-                <div class="project-content">
-                    <h3>SAÉ - Enquête sur le devenir des diplômés</h3>
-                    <p>Conception, diffusion et analyse d'une enquête complète avec traitement des données et visualisations éclairantes. Projet en équipe de 4 personnes.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">Matplotlib</span>
-                        <span class="tag">Analyse de données</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
                 <div class="project-image">🔍 Web Scraping 6G</div>
                 <div class="project-content">
                     <h3>Projet Thales - Analyse données 6G</h3>
-                    <p>Application d'extraction automatisée et d'analyse de données académiques sur la 6G avec tableau de bord interactif et stockage cloud. Collaboration avec Thales.</p>
+                    <p>Application d'extraction automatisée et d'analyse de données académiques sur la 6G avec tableau de bord interactif et stockage cloud dans une équipe de 4 personnes. Projet en collaboration avec Thales.</p>
                     <div class="project-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">API Google Drive</span>
+                        <span class="tag">API Arxiv</span>
                         <span class="tag">Streamlit</span>
                         <span class="tag">Web Scraping</span>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">🌙 Nuit de l'Info</div>
+                <a href="https://www.nuitdelinfo.com/" target="_blank"><div class="project-image" id="nuitinfo"></div></a>
                 <div class="project-content">
                     <h3>Concours National "La Nuit de l'Info"</h3>
                     <p>Développement d'un site web sur une thématique d'actualité lors d'un défi informatique national. Travail en équipe de 14 personnes, focus sur la créativité et résolution de problèmes.</p>
@@ -645,6 +605,19 @@
                         <span class="tag">JavaScript</span>
                         <span class="tag">Travail d'équipe</span>
                         <span class="tag">Créativité</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📊 Enquête Diplômés</div>
+                <div class="project-content">
+                    <h3>Situation d'Apprentissage et d'Évaluation (SAÉ) - Enquête sur le devenir des diplômés</h3>
+                    <p>Conception, diffusion et analyse d'une enquête complète avec traitement des données et visualisations éclairantes. Projet en équipe de 4 personnes.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Analyse de données</span>
                     </div>
                 </div>
             </div>
@@ -699,24 +672,60 @@
         </div>
     </section>
 
+    <!-- Stage Section -->
+    <section id="stage" class="section section-light">
+        <h2 class="section-title fade-in">Mon Stage</h2>
+        <div class="projects-grid fade-in">
+            <div class="project-card">
+                <div class="project-image">🐍 Développeur Python & Data - Traitement & Structuration de Bases de Données</div>
+                <div class="project-content">
+                    <h3>SIAAP (Syndicat interdépartemental pour l'assainissement de l'agglomération parisienne)</h3>
+                    <p><strong>Période :</strong> Juillet 2025 – Août 2025 (2 mois)</p>
+                    <p><strong>Lieu :</strong> Colombes, Île-de-France (sur site)</p>
+                    <p><strong>Contexte :</strong> Stage au sein du service Modélisation Opérationnelle (Direction Innovation). Objectif : transformer des fichiers Excel hétérogènes (mesures terrain, physico-chimie) en données normalisées et exploitables.</p>
+                    <p><strong>Missions principales :</strong></p>
+                    <ul>
+                        <li>Fusion et normalisation des données avec <strong>Python (pandas)</strong>.</li>
+                        <li>Automatisation de la conversion <strong>Excel → CSV</strong>.</li>
+                        <li>Mise en place d’une base <strong>SQLite</strong> (préparation migration PostgreSQL).</li>
+                        <li>Développement d’une <strong>API FastAPI</strong> pour interroger les données.</li>
+                        <li>Versionning et collaboration via <strong>Git/GitHub</strong>.</li>
+                    </ul>
+                    <p><strong>Impact :</strong> Amélioration de la qualité et de la réutilisabilité des données pour l’analyse et les modèles de simulation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
     <section id="contact" class="section contact">
-  <h2 class="section-title" style="color:white;">Me Contacter</h2>
-  <p style="text-align:center; margin-bottom:2rem;">N'hésitez pas à me contacter en cliquant sur un bouton ci-dessous 👇</p>
-  <div class="contact-grid">
-    <a href="mailto:razi.hadjamor@edu.univ-paris13.fr" class="contact-button">
-      📧 Email
-    </a>
-    <a href="https://www.linkedin.com/in/razi-hadjamor/" target="_blank" rel="noopener" class="contact-button">
-      💼 LinkedIn
-    </a>
-    <a href="https://github.com/RaziHadjAmor" target="_blank" rel="noopener" class="contact-button">
-      🐙 GitHub
-    </a>
-    <a href="assets/cv.pdf" download class="contact-button">
-      📄 Télécharger mon CV
-    </a>
-  </div>
-</section>
+      <h2 class="section-title" style="color:white;">Me Contacter</h2>
+      <p style="text-align:center; margin-bottom:2rem;">N'hésitez pas à me contacter, à découvrir mes projets sur GitHub ou à télécharger mon CV ci-dessous 👇</p>
+      <div class="contact-grid">
+        <a href="mailto:razi.hadjamor@edu.univ-paris13.fr" class="contact-button">
+          📧 Email
+        </a>
+        <a href="https://www.linkedin.com/in/razi-hadjamor/" target="_blank" rel="noopener" class="contact-button">
+          💼 LinkedIn
+        </a>
+        <a href="https://github.com/RaziHadjAmor" target="_blank" rel="noopener" class="contact-button">
+          🐙 GitHub
+        </a>
+        <a href="assets/cv.pdf" download class="contact-button">
+          📄 Télécharger mon CV
+        </a>
+      </div>
+    </section>
 
     <script>
         // Smooth scrolling for navigation links
@@ -833,4 +842,3 @@
     </script>
 </body>
 </html>
-
