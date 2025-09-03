@@ -16,7 +16,7 @@
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0c1a58 0%, #764ba2 100%);
         }
 
         /* Navigation */
@@ -149,6 +149,7 @@
             border-radius: 50%;
             animation: float 6s ease-in-out infinite;
         }
+
 
         /* Section styling */
         .section {
@@ -435,13 +436,45 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .contact-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 1.5rem;
+        }
+        
+        .contact-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          border-radius: 50px;
+          background: rgba(255,255,255,0.15);
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 1.1rem;
+          transition: all 0.3s ease;
+          border: 2px solid transparent;
+        }
+        
+        .contact-button:hover {
+          background: white;
+          color: #667eea;
+          transform: translateY(-4px) scale(1.05);
+          border-color: #667eea;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
+    <!-- Curseur personnalisé -->
+    <div id="custom-cursor">>_</div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Mon Portfolio</div>
+            <div id="logo" class="logo">Mon Portfolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
                 <li><a href="#about">À propos</a></li>
@@ -537,6 +570,41 @@
         </div>
     </section>
 
+    <!-- Stage Section -->
+    <section id="stage" class="section section-light">
+        <h2 class="section-title fade-in">Mon Stage</h2>
+        <div class="projects-grid fade-in">
+            <div class="project-card">
+                <div class="project-image">🐍 Développeur Python & Data</div>
+                <div class="project-content">
+                    <h3>SIAAP – Traitement & Structuration de Bases de Données</h3>
+                    <p><strong>Période :</strong> Juillet 2025 – Août 2025 (2 mois)</p>
+                    <p><strong>Lieu :</strong> Colombes, Île-de-France (sur site)</p>
+                    <p><strong>Contexte :</strong> Stage au sein du service Modélisation Opérationnelle (Direction Innovation). Objectif : transformer des fichiers Excel hétérogènes (mesures terrain, physico-chimie) en données normalisées et exploitables.</p>
+                    <p><strong>Missions principales :</strong></p>
+                    <ul>
+                        <li>Fusion et normalisation des données avec <strong>Python (pandas)</strong>.</li>
+                        <li>Automatisation de la conversion <strong>Excel → CSV</strong>.</li>
+                        <li>Mise en place d’une base <strong>SQLite</strong> (préparation migration PostgreSQL).</li>
+                        <li>Développement d’une <strong>API FastAPI</strong> pour interroger les données.</li>
+                        <li>Versionning et collaboration via <strong>Git/GitHub</strong>.</li>
+                    </ul>
+                    <p><strong>Impact :</strong> Amélioration de la qualité et de la réutilisabilité des données pour l’analyse et les modèles de simulation.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Excel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Projects Section -->
     <section id="projects" class="section section-white">
         <h2 class="section-title fade-in">Mes Projets</h2>
@@ -631,27 +699,24 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section contact">
-        <h2 class="section-title" style="color: white;">Me Contacter</h2>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
-            N'hésitez pas à me contacter pour discuter d'opportunités, de projets collaboratifs ou simplement échanger sur l'informatique !
-        </p>
-        <div class="contact-grid fade-in">
-            <div class="contact-item">
-                <h3>📧 Email</h3>
-                <p>razi.hadjamor@edu.univ-paris13.fr</p>
-            </div>
-            <div class="contact-item">
-                <h3>💼 LinkedIn</h3>
-                <p>https://www.linkedin.com/in/razi-hadjamor/</p>
-            </div>
-            <div class="contact-item">
-                <h3>🐙 GitHub</h3>
-                <p>https://github.com/RaziHadjAmor</p>
-            </div>
-        </div>
-    </section>
+  <h2 class="section-title" style="color:white;">Me Contacter</h2>
+  <p style="text-align:center; margin-bottom:2rem;">N'hésitez pas à me contacter en cliquant sur un bouton ci-dessous 👇</p>
+  <div class="contact-grid">
+    <a href="mailto:razi.hadjamor@edu.univ-paris13.fr" class="contact-button">
+      📧 Email
+    </a>
+    <a href="https://www.linkedin.com/in/razi-hadjamor/" target="_blank" rel="noopener" class="contact-button">
+      💼 LinkedIn
+    </a>
+    <a href="https://github.com/RaziHadjAmor" target="_blank" rel="noopener" class="contact-button">
+      🐙 GitHub
+    </a>
+    <a href="assets/cv.pdf" download class="contact-button">
+      📄 Télécharger mon CV
+    </a>
+  </div>
+</section>
 
     <script>
         // Smooth scrolling for navigation links
@@ -700,7 +765,7 @@
             particle.className = 'particle';
             particle.style.left = Math.random() * 100 + '%';
             particle.style.top = Math.random() * 100 + '%';
-            particle.style.width = (Math.random() * 10 + 5) + 'px';
+            particle.style.width = (Math.random() * 30 + 5) + 'px';
             particle.style.height = particle.style.width;
             particle.style.animationDelay = Math.random() * 6 + 's';
             particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
@@ -709,11 +774,11 @@
             
             setTimeout(() => {
                 particle.remove();
-            }, 8000);
+            }, 18000);
         }
 
         // Create particles periodically
-        setInterval(createParticle, 2000);
+        setInterval(createParticle, 1000);
 
         // Interactive hover effects for cards
         document.querySelectorAll('.skill-card, .project-card').forEach(card => {
@@ -742,6 +807,29 @@
             };
             typeWriter();
         }, 1000);
+
+        // Déplacement du bouton
+        let a =document.querySelector('body');
+        let boutton =document.getElementById('no');
+        a.addEventListener("mousemove",function(souris){
+            const rect= boutton.getBoundingClientRect();
+            let X= souris.clientX;
+            let Y= souris.clientY;
+            console.log(X,Y);
+    
+            const distanceX = (rect.x + rect.width / 2) - X;
+            const distanceY = (rect.y + rect.height / 2) - Y;
+            const distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
+            if(distance<100){
+                const newTop = Math.random() * (window.innerHeight - rect.height);
+                const newLeft = Math.random() * (window.innerWidth - rect.width);
+                boutton.style.position = 'absolute';
+                boutton.style.top = `${newTop}px`;
+                boutton.style.left = `${newLeft}px`;
+            }
+
+            }
+        );
     </script>
 </body>
 </html>
